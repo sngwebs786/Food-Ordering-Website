@@ -1,0 +1,67 @@
+.categories-cards div{
+    height: 300px !important;
+    width: 300px !important;
+    /* border: 2px solid black; */
+}
+
+.categories-subcards img{
+    height: auto !important;
+    width: auto !important;
+}
+.categories-cards{
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+    flex-wrap: wrap !important;
+}
+
+.categories-subcards{
+    margin-top: 50px;
+}
+.categories-subcards h3{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* HEADING AND DESIGN  */
+.heading-minimal {
+    text-align: center;
+    margin-bottom: 55px;
+}
+.head-title{
+    font-size: 40px;
+    font-weight: bold;
+}
+.heading-minimal .sub-title {
+    color: #FFCC00;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.heading-minimal .bottom-dots {
+    /* position: absolute; */
+    /* left: 50%; */
+    bottom: 0;
+    width: 100%;
+    /* margin-left: -25px; */
+}
+.bottom-dots .dot.line-dot, .heading-dots .h-dot.line-dot {
+    border-right: 40px solid #FFCC00 ;
+}
+.bottom-dots .dot {
+    position: relative; 
+    display: block;
+    float: left;
+    width: 3px;
+    height: 3px;
+    border-right: 3px solid #FFCC00;
+    margin-right: 3px;
+}
+
+.margin-top{
+    margin-top: 80px;
+}
+

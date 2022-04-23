@@ -1,0 +1,29 @@
+.team-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-subcards{
+    width: 300px;
+    background-color: rgb(245, 241, 241);
+    border-radius: 20px;
+    height: 420px;
+    margin-top: 20px;
+}
+
+.team-subcards:hover{
+    box-shadow: 5px 2px 20px 10px rgb(236, 236, 236);
+}
+
+.team-subcards p{
+    color: rgb(78, 76, 76);
+}
+
+.team-subcards:hover h3{
+    color: #FFCC00;
+}
+.team-subcards:hover{
+   background-color: white;
+}
