@@ -4,19 +4,29 @@ import logo from "../assets/images/logo.png";
 import "../assets/styles/Navbar.css";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import Badge from "@material-ui/core/Badge";
+import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = (props) => {
   //setting mobile nav
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
 
   //change nav color when scrolling
   const [color, setColor] = useState(false);
+  console.log(props);
   const changeColor = () => {
-    if (window.scrollY >= 420) {
-      setColor(true);
+    if (props.trans === "true") {
+      if (window.scrollY >= 420) {
+        setColor(true);
+      } else {
+        setColor(false);
+      }
     } else {
-      setColor(false);
+      if (window.scrollY >= 50) {
+        setColor(true);
+      } else {
+        setColor(false);
+      }
     }
   };
 
@@ -41,23 +51,25 @@ const Navbar = () => {
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item nav-item2">
-            <a href="/" onClick={closeMenu}>
-              Home
+            <Link to="/home">
+              <a onClick={closeMenu}>
+                Home
+              </a>
+            </Link>
+          </li>
+          <li className="nav-item nav-item2">
+            <a href="#deals" onClick={closeMenu}>
+              Deals
             </a>
           </li>
           <li className="nav-item nav-item2">
-            <a href="#about" onClick={closeMenu}>
-              About
+            <a href="#clients" onClick={closeMenu}>
+              Clients
             </a>
           </li>
           <li className="nav-item nav-item2">
-            <a href="#testimonials" onClick={closeMenu}>
-              Testimonials
-            </a>
-          </li>
-          <li className="nav-item nav-item2">
-            <a href="#demo" onClick={closeMenu}>
-              Demo
+            <a href="#team" onClick={closeMenu}>
+              Team
             </a>
           </li>
 

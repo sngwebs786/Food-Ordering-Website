@@ -10,20 +10,17 @@ import TestimonialPortion from "./components/TestimonialPortion";
 import Team from "./components/Team";
 import GetOrder from "./components/GetOrder";
 import Footer from "./components/Footer";
-
+import Home from "./pages/Home";
+import MyRoutes from "./routes/MyRoutes";
+import { BrowserRouter } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <>
-      <Navbar />
-      <Hero />
-      <Categories />
-      <DealCard />
-      <FeaturePortion />
-      <TestimonialPortion />
-      <Team/>
-      <GetOrder/>
-      <Footer/>
-      
+      <BrowserRouter>
+        <MyRoutes />
+        <Footer/>
+      </BrowserRouter>
     </>
   );
 }

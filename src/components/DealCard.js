@@ -20,7 +20,7 @@ const data = [
     numReviews: 34,
   },
   {
-    id: 1,
+    id: 2,
     imageURL: deal2,
     // "https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4600&q=80",
     name: "Deal 2",
@@ -30,7 +30,7 @@ const data = [
     numReviews: 34,
   },
   {
-    id: 1,
+    id: 3,
     imageURL: deal3,
     name: "Deal 3",
     desc: "Blackened chicken,and peppers smothered with pepper jack",
@@ -39,7 +39,7 @@ const data = [
     numReviews: 34,
   },
   {
-    id: 1,
+    id: 4,
     imageURL: deal4,
     name: "Deal 4",
     desc: "Sliced Chicken Poppers, Green Peppers, Mushrooms, Onions",
@@ -48,7 +48,7 @@ const data = [
     numReviews: 34,
   },
   {
-    id: 1,
+    id: 5,
     imageURL: deal5,
     name: "Deal 5",
     desc: "Special Burger, deep-fried beef ravioli served with",
@@ -57,7 +57,7 @@ const data = [
     numReviews: 34,
   },
   {
-    id: 1,
+    id: 6,
     imageURL: deal6,
     name: "Deal 6",
     desc: "Special Cauliflower Pizza, Add your toppings  ",

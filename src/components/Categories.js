@@ -1,5 +1,5 @@
 import { Center } from "@chakra-ui/react";
-import React from "react";
+import React, { useState } from "react";
 import "../assets/styles/Categories.css";
 import burger from "../assets/images/burger.png";
 import pizza from "../assets/images/pizza.png";
@@ -10,6 +10,7 @@ import cocktail from "../assets/images/cocktail.png";
 import pasta from "../assets/images/pasta.png";
 import sandwich from "../assets/images/sandwiches.png";
 const Categories = () => {
+  const[category,setCategory]=useState("")
   return (
     <>
       <div className="margin-top">
@@ -26,11 +27,12 @@ const Categories = () => {
           </div>
         </Center>
           <div className="categories-cards">
-            <div className="categories-subcards">
+
+            <div className="categories-subcards" style={{cursor:"pointer"}} onClick={()=>setCategory("Pizza")}>
               <Center>
                 <img src={pizza} />
               </Center>
-              <h3 className="text-center">Pizza</h3>
+              <h3 className="text-center" >Pizza</h3>
               <p className="text-center">Explore different flavours</p>
             </div>
             <div className="categories-subcards">
@@ -91,4 +93,6 @@ const Categories = () => {
   );
 };
 
+// export const itemName = socketConnect(category);
+// export default Categories;
 export default Categories;

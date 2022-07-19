@@ -24,6 +24,7 @@ const NextBtn = (props) => {
 const Testimonial = () => {
   return (
     <div
+    
       className="testimonial"
       style={{ display: "flex", justifyContent: "center", marginTop: 50 }}
     >

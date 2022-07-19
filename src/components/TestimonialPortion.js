@@ -25,33 +25,15 @@ import Testimonial from "./Testimonial";
 //   icon?: ReactElement;
 // }
 
-var text = "dsdas";
-var icon = "dsdas";
-var iconBg = "dsdas";
-
-const Feature = () => {
-  return (
-    <Stack direction={"row"} align={"center"}>
-      <Flex
-        w={8}
-        h={8}
-        align={"center"}
-        justify={"center"}
-        rounded={"full"}
-        bg={iconBg}
-      >
-        {icon}
-      </Flex>
-      <Text fontWeight={600}>{text}</Text>
-    </Stack>
-  );
-};
-
 export default function TestimonialPortion() {
   return (
     <Container maxW={"9xl"} py={12}>
       <Center>
-        <div className="heading-minimal" style={{marginTop:"80px"}}>
+        <div
+          id="clients"
+          className="heading-minimal"
+          style={{ marginTop: "80px" }}
+        >
           <div className="sub-title">SATISFIED CLIENTS</div>
           <h3 className="head-title">What Our Clients Say</h3>
           <div className="bottom-dots  clearfix center">
